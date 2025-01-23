@@ -16,7 +16,7 @@ const HeroSection = () => {
                 into immersive reality!
             </p>
             <div className="flex justify-center my-10">
-                <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 border rounded-md">
+                <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 border rounded-md">
                     Start for free
                 </a>
                 <a href="#" className="py-3 px-4 mx-3 rounded-md border">
