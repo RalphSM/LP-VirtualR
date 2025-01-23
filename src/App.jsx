@@ -1,4 +1,4 @@
-import FeatureSection from "./Components/Feature"
+import FeatureSection from "./Components/FeatureSection"
 import HeroSection from "./Components/HeroSection"
 import Navbar from "./Components/Navbar"
 
