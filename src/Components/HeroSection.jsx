@@ -39,4 +39,4 @@ const HeroSection = () => {
 
 export default HeroSection
 
-{/* 23:35 */}
+{/* 26:10 */}
