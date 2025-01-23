@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png"
 import { navItems } from "../constants"
-import {Menu, X} from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { useState } from "react"
 
 const Navbar = () => {
@@ -21,24 +21,24 @@ const Navbar = () => {
                     <ul className="hidden lg:flex ml-14 space-x-12">
                         {navItems.map((item) => (
                             <li key={item.href}>
-                                <a href={item.href} className="hover:text-primary transition-colors">{item.label}</a>
+                                <a href={item.href}>{item.label}</a>
                             </li>
                         ))}
                     </ul>
-                    <div className="hidden lg:flex justify-center items-center">
-                        <a href="#" className="py-2 px-3 border rounded-md">Sing In</a>
-                    </div>
-                    <div className="hidden lg:flex justify-center space-x-12 items-center">
+                    <div className="hidden lg:flex justify-center space-x-6 items-center">
+                        <a href="#" className="py-2 px-3 border rounded-md">
+                            Sing In
+                        </a>
                         <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 border rounded-md">
                             Create an account
                         </a>
                     </div>
-                    <div className="lg:hidden md:flex flex-col justfy-end">
+                    <div className="lg:hidden flex flex-col justfy-end">
                         <button onClick={toggleNavbar}>{mobileDrowerOpen ? <X /> : <Menu />}</button>
                     </div>
                 </div>
                 {mobileDrowerOpen && (
-                    <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-cente item-center lg:hidden">
+                    <div className="fixed top-0 left-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-cente item-center lg:hidden">
                         <ul>
                             {navItems.map((item) =>(
                                 <li key={item} className="py-4">
